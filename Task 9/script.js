@@ -14,6 +14,12 @@ class Movie {
         this.title = title
         this.director = director
         this.budget = budget
+        this.wasExpensive = function(){
+            if(wasExpensive >= 10000000) {
+                return 'true'
+            }
+            return'false'
+        }
     }
 }
     
@@ -21,4 +27,4 @@ let myMovie = new Movie("Harry Potter", "Chris Columbus", 200000000);
 let myMovie2 = new Movie("Anabelle", 'Klaus', 10000000);
 
 
-console.log(myMovie)
+
