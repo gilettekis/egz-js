@@ -12,4 +12,4 @@ let state = 0;
 btn__element.addEventListener("click", function(){
 state +=1;
 document.getElementById('btn__state') = state;
-});
+})
