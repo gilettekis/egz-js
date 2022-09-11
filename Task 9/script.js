@@ -19,14 +19,18 @@ class Movie {
 }
     
 let myMovie = new Movie("Harry Potter", "Chris Columbus", 200000000);
-// let myMovie2 = new Movie("Anabelle", 'Klaus', 10000000);
+let myMovie2 = new Movie("Anabelle", 'Klaus', 10000000);
 
-const myWasExpensive = true
-const wasExpensive = function(){
-    if (budget > 100000000){
-        return 'true';
+function myBudget(myMovie2, budget) {
+    return myMovie2.map(function(i) {
+      return i[budget];
+    });
+  }
+function wasExpensive(i){
+    if(i > 100000000){
+        return "true";
     } else {
-        return 'false';
+        return "false"
     }
 }
-console.log(wasExpensive);
+    console.log(wasExpensive(100000000));
